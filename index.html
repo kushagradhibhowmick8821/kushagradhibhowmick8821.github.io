@@ -3,29 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kushagradhi Bhowmick - Portfolio</title>
+    <title>Kushagradhi Bhowmick | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Full-width Navigation -->
     <header>
-        <h1>Kushagradhi Bhowmick</h1>
+        <nav class="navbar glass-nav">
+            <h1 class="gradient-text">Kushagradhi Bhowmick</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="portfolio">
-        <div class="profile-image">
-            <img src="profile.jpg" alt="Kushagradhi Bhowmick">
-        </div>
-
-        <div class="image-slider">
-            <img src="project1.jpg" alt="Project 1">
-            <img src="project2.jpg" alt="Project 2">
-            <img src="project3.jpg" alt="Project 3">
+    <!-- Hero -->
+    <section id="hero" class="fade-in">
+        <div class="hero-content glass-panel">
+            <h2>🚀 Computer Science Engineering Student</h2>
+            <p>Cybersecurity • Data Science • Full-Stack Development</p>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2023 Kushagradhi Bhowmick</p>
-    </footer>
+    <!-- About -->
+    <section id="about" class="fade-in glass-panel">
+        <h2>About Me</h2>
+        <p>Computer Science engineering student with practical experience in cybersecurity, data science, and full-stack development. Eager to apply strong problem-solving skills and technical expertise to develop secure, efficient, and innovative solutions in real-world projects.</p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="fade-in glass-panel">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Programming:</strong> Python, C, C++, Java</li>
+            <li><strong>Web Development:</strong> HTML, CSS, Flask, Node.js</li>
+            <li><strong>Databases:</strong> MySQL</li>
+            <li><strong>Operating Systems:</strong> Linux (Arch, Debian), Windows</li>
+            <li><strong>Cloud Platforms:</strong> AWS, GCP</li>
+            <li><strong>Cybersecurity Tools:</strong> Metasploit, Burp Suite, Nmap, Netcat, OWASP Top 10, Vulnerability Assessment, Penetration Testing</li>
+        </ul>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="fade-in glass-panel">
+        <h2>Experience</h2>
+        <div class="card">
+            <h3>Web Security Analyst Intern — Rinex</h3>
+            <p>May 2023 – Aug 2023</p>
+            <ul>
+                <li>Evaluated web application security, identified vulnerabilities, and proposed mitigation strategies.</li>
+                <li>Authored detailed technical reports outlining risks and remediation steps.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Data Science Intern — Oasis Infobyte</h3>
+            <p>Jun 2023 – Jul 2023</p>
+            <ul>
+                <li>Developed predictive models including Iris classification, unemployment trend analysis, and sales forecasting.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>CTF Participant — picoCTF</h3>
+            <p>Feb 2024 — Scored 1200 points</p>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="fade-in glass-panel">
+        <h2>Projects</h2>
+        <div class="card">
+            <h3>NLP Chatbot</h3>
+            <p>E-commerce helpdesk chatbot using Keras, TensorFlow, Pandas. Achieved 90% query resolution accuracy.</p>
+            <a href="https://github.com/kushagradhibhowmick8821/aichatbot">🔗 GitHub Link</a>
+        </div>
+        <div class="card">
+            <h3>File Upload & Download Management System</h3>
+            <p>Flask-based platform with authentication and secure file deletion.</p>
+            <a href="http://kb.pythonanywhere.com/" target="_blank">🌐 Live Demo</a>
+        </div>
+        <div class="card">
+            <h3>Scode — Web Code Editor</h3>
+            <p>Lightweight JavaScript code editor packaged as Android app.</p>
+            <a href="https://github.com/kushagradhibhowmick8821/notepad">🔗 GitHub Link</a>
+        </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications" class="fade-in glass-panel">
+        <h2>Publications</h2>
+        <ul>
+            <li>An IoT Based Smart Device for Real-Time Women Safety and Emergency Response — IJSREM, Apr 04 2025</li>
+            <li>Blockchain-Driven Aid Distribution: Enhancing Human Assistance Through Decentralised Validation in Conflict Zones — IJSREM, Jun 06 2025</li>
+        </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="fade-in glass-panel">
+        <h2>Contact</h2>
+        <p>📧 <a href="mailto:kushagradhibhowmick@gmail.com">kushagradhibhowmick@gmail.com</a></p>
+        <p>📞 <a href="tel:+918910544431">+91 8910544431</a></p>
+        <p>🔗 <a href="https://www.linkedin.com/in/kushagradhi-bhowmick" target="_blank">LinkedIn</a></p>
+        <p>💻 <a href="https://github.com/kushagradhibhowmick8821" target="_blank">GitHub</a></p>
+    </section>
 
     <script src="script.js"></script>
 </body>

@@ -1,17 +1,17 @@
-// script.js
-let currentIndex = 0;
-const images = document.querySelectorAll(".image-slider img");
+document.addEventListener("DOMContentLoaded", function() {
+    const faders = document.querySelectorAll('.fade-in');
 
-function showImage(index) {
-    images.forEach((img, i) => {
-        img.style.display = i === index ? "block" : "none";
+    const appearOptions = { threshold: 0.2 };
+
+    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add('show');
+            appearOnScroll.unobserve(entry.target);
+        });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+        appearOnScroll.observe(fader);
     });
-}
-
-function nextImage() {
-    currentIndex = (currentIndex + 1) % images.length;
-    showImage(currentIndex);
-}
-
-showImage(currentIndex);
-setInterval(nextImage, 3000); // Change image every 3 seconds
+});
